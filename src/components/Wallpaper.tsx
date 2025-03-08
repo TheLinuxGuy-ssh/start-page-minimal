@@ -3,7 +3,7 @@ import { WallpaperData } from "../assets/config";
 const Wallpaper = () => {
     return (
         <div className="wallpaper">
-            <img src={WallpaperData.url} />
+            <img className={(WallpaperData.animation && "animated")} src={WallpaperData.url} />
         </div>
     )
 }

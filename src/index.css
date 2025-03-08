@@ -7,6 +7,8 @@ body {
   color: var(--color-dark);
   font-size: var(--size-font);
   font-family: Arial, sans-serif; 
+  overflow: hidden;
+  background-color: #6e6e6e;
 }
 .wallpaper {
   display: fixed;
@@ -18,6 +20,20 @@ body {
 .wallpaper img {
   width: 100%;
   height: 100%;
+}
+.wallpaper img.animated {
+  animation: 1s wallpaper-appear ease-in-out forwards;
+  animation-delay: 2s;
+  filter: brightness(0);
+}
+
+@keyframes wallpaper-appear{
+  0% {
+    filter: brightness(0);
+  }
+  100% {
+    filter: brightness(1);
+  }
 }
 
 .dock {
