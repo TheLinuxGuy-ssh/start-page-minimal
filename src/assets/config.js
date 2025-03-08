@@ -19,4 +19,9 @@ export const DockData = [
         name: "Spotify",
         imgurl: "https://cdn.prod.website-files.com/6728a3e6f4f4161c235bc519/6728a6bea97e140677496dae_spotify.png"
     }
-]
+];
+
+export const WallpaperData = 
+{
+    url: "./src/assets/night.png"
+}

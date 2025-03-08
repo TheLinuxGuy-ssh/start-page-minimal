@@ -1,8 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: var(--color-neutral-300);
   color: var(--color-dark);
   font-size: var(--size-font);
   font-family: Arial, sans-serif; 
+}
+.wallpaper {
+  display: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wallpaper img {
+  width: 100%;
+  height: 100%;
 }
 
 .dock {
@@ -21,7 +36,7 @@ body {
   align-items: flex-end;
   display: flex;
   position: fixed;
-  inset: 0 0 10vh;
+  inset: 0 0 3vh;
 }
 
 .nav-list {
@@ -32,27 +47,33 @@ body {
   padding-left: 0;
   display: flex;
   font-size: 1.4vw;
+  background-color: #7e7e7e60;
+  border-radius: 1em;
+  height:2em;
+  padding: 0.5em 0.2em;
+  border: 1px solid #6e6e6e;
+  backdrop-filter: blur(5px);
 }
 
 .nav-item {
   justify-content: center;
   align-items: center;
-  width: 5em;
+  width: 3em;
   transition: width .5s cubic-bezier(.16, 1, .3, 1);
   display: flex;
   position: relative;
 }
 
 .nav-item.hover {
-  width: 8em;
+  width: 4.5em;
 }
 
 .nav-item.sibling-close {
-  width: 7em;
+  width: 3.9em;
 }
 
 .nav-item.sibling-far {
-  width: 6em;
+  width: 3.7em;
 }
 
 .nav-item__link {
@@ -86,6 +107,8 @@ body {
   top: 0;
   transform: translate(0, -80%);
   font-weight: 400;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-item:hover .nav-item__tooltip{

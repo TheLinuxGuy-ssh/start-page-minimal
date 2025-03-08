@@ -26,7 +26,7 @@ const Dock = () => {
                         <ul className="nav-list">
                             {DockData.map((data, key) => {
                             return (
-                                <li className="nav-item">
+                                <li className="nav-item" key={key}>
                                 <a href="#" className="nav-item__link"><img src={data.imgurl} loading="eager" alt="Notion app icon" className="image" /></a>
                                 <div className="nav-item__tooltip">
                                     <div>{data.name}</div>
