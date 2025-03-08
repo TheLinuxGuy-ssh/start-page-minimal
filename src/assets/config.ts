@@ -5,7 +5,7 @@ export const Meta =
     }
 export const WallpaperData = 
 {
-    url: "./src/assets/night.png",
+    url: "https://wallpapercave.com/wp/wp9049777.jpg",
     animation: true
 }
 export const DockData = [
