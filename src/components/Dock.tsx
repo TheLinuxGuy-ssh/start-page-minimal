@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { DockData } from '../assets/config';
-import { initNavItems } from '../assets/dock'; 
+import { DockData } from '../assets/config.ts';
+import { initNavItems } from '../assets/dock.ts'; 
 
 const Dock = () => {
     useEffect(() => {

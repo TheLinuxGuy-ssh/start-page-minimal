@@ -1,11 +1,15 @@
-// script.js
-
-// Function to manipulate the DOM for hover effects
+// interface props{
+//   items: any,
+//   index: any,
+//   offset: any,
+//   className: any,
+//   add: any
+// }
 export const initNavItems = () => {
     const navItems = document.querySelectorAll('.nav-item');
   
     // Helper function to toggle class for sibling elements
-    const toggleSiblingClass = (items, index, offset, className, add) => {
+    const toggleSiblingClass = (items:any, index:any, offset:any, className:any, add:any) => {
       const sibling = items[index + offset];
       if (sibling) {
         sibling.classList.toggle(className, add);

@@ -1,6 +1,6 @@
-import Metadata from "./components/Metadata";
-import Wallpaper from './components/Wallpaper';
-import Dock from './components/Dock';
+import Metadata from "./components/Metadata.tsx";
+import Wallpaper from './components/Wallpaper.tsx';
+import Dock from "./components/Dock.tsx";
 
 function App() {
   return (

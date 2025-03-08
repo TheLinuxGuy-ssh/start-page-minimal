@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { Meta } from "../assets/config";
+import { Meta } from "../assets/config.ts";
 
 
 const Metadata = () => {
