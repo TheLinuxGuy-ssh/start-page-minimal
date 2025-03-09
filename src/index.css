@@ -10,12 +10,22 @@ body {
   overflow: hidden;
   background-color: #6e6e6e;
 }
+.greeting {
+  margin: 10em 0 0 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #fff;
+}
 .wallpaper {
-  display: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 .wallpaper img {
   width: 100%;
@@ -34,6 +44,47 @@ body {
   100% {
     filter: brightness(1);
   }
+}
+
+@font-face {
+  font-family: Anonymous;
+  src: url(./assets/AnonymiceProNerdFontPropo-Regular.ttf);
+}
+
+.terminal {
+  margin: 2em;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminal * {
+  font-family: Anonymous;
+}
+
+.terminal::-webkit-scrollbar {
+  background-color: #6e6e6e !important;
+}
+
+.terminal > div {
+  width: 30em;
+  height: 40vh;
+}
+
+.terminal > div > div {
+  background: none !important;
+}
+
+.terminal > div > div > div {
+  overflow-y: auto;
+}
+
+#terminalEditor {
+  background-color: #1f1f1f7a !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid #6b6b6b;
+  border-radius: 0.75em;
 }
 
 .dock {

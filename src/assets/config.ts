@@ -1,8 +1,16 @@
+export const User = 
+    {
+        username: "TheLinuxGuy",
+    }
 export const Meta = 
     {
         title: "Start Page (Minimal)",
         iconurl: "https://cdn.prod.website-files.com/6728a3e6f4f4161c235bc519/6728a6bea97e140677496dae_spotify.png"
     }
+export const TerminalData =
+        {
+            prompt: ">"
+        }
 export const WallpaperData = 
 {
     url: "https://wallpapercave.com/wp/wp9049777.jpg",
