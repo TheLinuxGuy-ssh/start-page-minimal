@@ -9,7 +9,7 @@ export const Meta =
     }
 export const TerminalData =
         {
-            prompt: ">"
+            prompt: User.username + "@TLG :-$"
         }
 export const WallpaperData = 
 {
